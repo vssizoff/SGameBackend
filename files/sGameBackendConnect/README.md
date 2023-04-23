@@ -2,7 +2,7 @@
 ## CDN
 ```html
 <script src="https://cdn.jsdelivr.net/gh/vssizoff/SRequest/cdn.js"></script>
-<script src="./sGameBackendConnect/cdn.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sizoff/s_game_backend_connect/cdn.js"></script>
 ```
 ## NPM
 ```
