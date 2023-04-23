@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="https://cdn.jsdelivr.net/gh/vssizoff/SRequest/cdn.js"></script>
+    <script src="./sGameBackend.js"></script>
+</head>
+<body>
+<textarea id="data" cols="80" rows="40"></textarea>
+<button id="btn" onclick="loginBtn()">send</button>
+<script>
+    function loginBtn() {
+        let data = document.querySelector("#data").value.split('\n');
+        login(data[0], data[1]).then(data => alert(JSON.stringify(data)));
+    }
+</script>
+</body>
+</html>

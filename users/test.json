@@ -1,0 +1,42 @@
+{
+  "password": "1234",
+  "data": {},
+  "savings": {
+    "2023.4.1 10:37:42": {
+      "pinned": false,
+      "date": "2023.4.1 10:37:42",
+      "data": {
+        "test": "test",
+        "test0": 8888,
+        "test1": true
+      }
+    },
+    "2023.4.1 10:38:48": {
+      "pinned": false,
+      "date": "2023.4.1 10:40:13",
+      "data": {
+        "test": "test",
+        "test0": 8888,
+        "test1": true
+      }
+    },
+    "test": {
+      "pinned": false,
+      "date": "2023.4.1 10:39:35",
+      "data": {
+        "test": "test",
+        "test0": 8888,
+        "test1": true
+      }
+    },
+    "2023.4.23 10:10:59": {
+      "pinned": false,
+      "date": "2023.4.23 10:10:59",
+      "data": {
+        "test": "test",
+        "test0": 8888,
+        "test1": true
+      }
+    }
+  }
+}
