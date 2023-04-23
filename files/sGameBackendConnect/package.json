@@ -1,6 +1,6 @@
 {
   "name": "@sizoff/s_game_backend_connect",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.mjs",
   "author": "sizoff",
@@ -13,5 +13,8 @@
     "url": "https://github.com/vssizoff/SGameBackend/issues"
   },
   "homepage": "https://github.com/vssizoff/SGameBackend#readme",
-  "readme": "README.md"
+  "readme": "README.md",
+  "dependencies": {
+    "srequest_js": "^0.0.0-s1"
+  }
 }
