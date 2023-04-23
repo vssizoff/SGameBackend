@@ -82,3 +82,9 @@ app.start(() => {
     app.logger.message(app.routes);
 });
 ```
+## files.json
+```json
+{
+  "/": "./files/test.html"
+}
+```

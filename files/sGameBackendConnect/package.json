@@ -1,0 +1,17 @@
+{
+  "name": "@sizoff/s_game_backend_connect",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "author": "sizoff",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vssizoff/SGameBackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vssizoff/SGameBackend/issues"
+  },
+  "homepage": "https://github.com/vssizoff/SGameBackend#readme",
+  "readme": "README.md"
+}

@@ -1,7 +1,9 @@
-let serverIp = "http://localhost:8888";
+let serverURL = "http://localhost:8080";
+
+function setServerURL(newURL) {serverURL = newURL}
 
 async function login(login, password) {
-    let {data, status} = await getRequestSync(`${serverIp}/login/${login}`, {
+    let {data, status} = await getRequestSync(`${serverURL}/login/${login}`, {
         query: password,
         outputType: "text"
     });
@@ -12,7 +14,7 @@ async function login(login, password) {
 }
 
 async function reg(login, password, data = undefined) {
-    let {d, status} = await postRequestSync(`${serverIp}/reg`, data === undefined ? {login, password} : {login, password, data}, {
+    let {d, status} = await postRequestSync(`${serverURL}/reg`, data === undefined ? {login, password} : {login, password, data}, {
         outputType: "text"
     });
     // if (status === 200) return true;
@@ -24,7 +26,7 @@ async function reg(login, password, data = undefined) {
 }
 
 async function setUserData(login, password, data) {
-    let {d, status} = await postRequestSync(`${serverIp}/set_user_data`, {login, password, data}, {
+    let {d, status} = await postRequestSync(`${serverURL}/set_user_data`, {login, password, data}, {
         outputType: "text"
     });
     // if (status === 200) return true;
@@ -36,7 +38,7 @@ async function setUserData(login, password, data) {
 }
 
 async function load(login, saving) {
-    let {data, status} = await getRequestSync(`${serverIp}/load/${login}/${saving}`, {
+    let {data, status} = await getRequestSync(`${serverURL}/load/${login}/${saving}`, {
         outputType: "text"
     });
     // if (status === 200) return JSON.parse(data);
@@ -48,7 +50,7 @@ async function load(login, saving) {
 }
 
 async function getSavings(login) {
-    let {data, status} = await getRequestSync(`${serverIp}/get_savings/${login}`, {
+    let {data, status} = await getRequestSync(`${serverURL}/get_savings/${login}`, {
         outputType: "text"
     });
     // if (status === 200) return JSON.parse(data);
@@ -60,7 +62,7 @@ async function getSavings(login) {
 }
 
 async function save(login, password, data) {
-    let {d, status} = await postRequestSync(`${serverIp}/save`, {login, password, data}, {
+    let {d, status} = await postRequestSync(`${serverURL}/save`, {login, password, data}, {
         outputType: "text"
     });
     // if (status === 200) return true;
