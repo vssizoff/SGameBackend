@@ -1,3 +1,5 @@
+import {postRequestSync, getRequestSync} from "srequest_js"
+
 export let serverURL = "http://localhost:8080";
 
 export function setServerURL(newURL) {serverURL = newURL}
